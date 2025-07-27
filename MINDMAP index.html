@@ -4,15 +4,7 @@
   <meta charset="UTF-8" />
   <title>我的思维导图</title>
   <style>
-    body { 
-      <script>
-  const pwd = prompt("请输入访问密码：");
-  if (pwd !== "369852") {
-    document.body.innerHTML = "<h2 style='text-align:center; margin-top:30vh;'>❌ 密码错误，访问被拒绝</h2>";
-    throw new Error("Access denied");
-  }
-</script>
-
+    body {
       background: #f0f0f0;
       font-family: sans-serif;
       overflow: hidden;
@@ -37,6 +29,14 @@
   </style>
 </head>
 <body>
+  <script>
+    const pwd = prompt("请输入访问密码：");
+    if (pwd !== "888888") {
+      document.body.innerHTML = "<h2 style='text-align:center; margin-top:30vh;'>❌ 密码错误，访问被拒绝</h2>";
+      throw new Error("Access denied");
+    }
+  </script>
+
   <div id="map"></div>
 
   <script>
