@@ -77,4 +77,16 @@
         for (let node of nodes) {
           createNode(node.text, node.x, node.y);
         }
-     
+      } else {
+        const centerX = window.innerWidth / 2;
+        const centerY = window.innerHeight / 2;
+        createNode('中心想法', centerX, centerY);
+        nodes.push({ text: '中心想法', x: centerX, y: centerY });
+        saveNodes();
+      }
+    }
+
+    loadNodes();
+  </script>
+</body>
+</html>
